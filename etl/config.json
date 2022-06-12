@@ -1,0 +1,27 @@
+{
+  "defaultpath": {
+    "gsshop": "https://www.gsshop.com/prd/prd.gs?prdid=",
+    "gramket": "http://mitem.gmarket.co.kr/Item?goodscode="
+  },
+  "xpath": {
+    "gsshop": {
+      "url": "https://www.gsshop.com/prd/prd.gs?prdid=37216130",
+      "title": "[애플망고]딥브이원피스",
+      "price": "8,900",
+      "img": "https://asset.m-gs.kr/prod/37216130/1/550"
+      },
+    "gmarket": {
+        "url": "http://mitem.gmarket.co.kr/Item?goodscode=242253587",
+        "title": "티오 아이스티 복숭아 150T +사은품 락엔락 체스 물병",
+        "price": "20,900",
+        "img": "http://gdimg.gmarket.co.kr/242253587/still/400?ver=1654145087"
+    }
+  },
+  "postgres": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "product",
+    "user": "postgres",
+    "password": "postgres"
+  }
+}

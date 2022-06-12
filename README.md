@@ -22,4 +22,8 @@ wsl --set-default-version 2
 4. Docker Desktop 설치  
 https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=header  
 
-5. 
+# conduct etl programs
+1. Docker Desktop 실행
+
+2. Docker 구동
+docker-compose up -d

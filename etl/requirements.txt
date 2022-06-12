@@ -1,0 +1,10 @@
+bs4
+beautifulsoup4
+numpy
+pandas
+psycopg2-binary
+requests
+urllib3
+selenium
+chromedriver_autoinstaller
+lxml
