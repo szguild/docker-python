@@ -1,7 +1,7 @@
 {
   "defaultpath": {
     "gsshop": "https://www.gsshop.com/prd/prd.gs?prdid=",
-    "gramket": "http://mitem.gmarket.co.kr/Item?goodscode="
+    "gmarket": "http://mitem.gmarket.co.kr/Item?goodscode="
   },
   "xpath": {
     "gsshop": {
@@ -20,7 +20,7 @@
   "postgres": {
     "host": "localhost",
     "port": 5432,
-    "database": "product",
+    "database": "postgres",
     "user": "postgres",
     "password": "postgres"
   }

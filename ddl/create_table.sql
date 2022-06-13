@@ -1,7 +1,7 @@
 -- create product master
 create table if not exists product.tb_product_m(
     site_cd varchar(50) not null,
-    product_id int not null,
+    product_id bigint not null,
     product_nm varchar(500) not null,
     price int not null,
     img_url varchar(500) not null,
@@ -19,8 +19,8 @@ create table if not exists product.tb_product_m(
 -- create loading table
 create table if not exists product.tb_product_if(
     id serial,
-    site_code varchar(50) not null,
-    product_id int not null,
+    site_cd varchar(50) not null,
+    product_id bigint not null,
     product_nm varchar(500) not null,
     price int not null,
     img_url varchar(500) not null,
@@ -51,10 +51,10 @@ create table if not exists product.tb_job_log(
 create index if not exists ix_tb_job_log_01 on product.tb_job_log(job_name);
 create index if not exists ix_tb_job_log_02 on product.tb_job_log(status_cd);
 
--- create extract target product list (향후 상품정보 수집대상을 관리 테이블)
+-- create extract target product list (향후 상품정보 수집대상 관리 테이블)
 create table if not exists product.tb_product_target(
     site_cd varchar(50) not null,
-    product_id int not null,
+    product_id bigint not null,
     use_yn char(1),
     create_dt timestamp,
     update_dt timestamp,
@@ -62,7 +62,6 @@ create table if not exists product.tb_product_target(
 );
 
 insert into product.tb_product_target values ('gsshop', 37216130, 'Y', now(), null);
-
 insert into product.tb_product_target values ('gmarket', 242253587, 'Y', now(), null);
-
-commit;
+insert into product.tb_product_target values ('gsshop', 37216131, 'Y', now(), null);
+insert into product.tb_product_target values ('gmarket', 2391361187, 'Y', now(), null);
