@@ -1,5 +1,5 @@
 # docker-python
-Using docker and python, conduct data crawling and ETL process.  
+Using docker and python, conduct data scrapping and ETL process.  
 
 # dev spec
 window 10 home  
